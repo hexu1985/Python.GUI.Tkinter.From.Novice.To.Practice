@@ -19,7 +19,7 @@ iid = ""  # 双击项目的ID
 book_title = ["ID", "name", "category", "price", "publish_time"]
 book_heading = ["序列", "书名", "系列", "价格", "出版时间"]
 # 打开数据库连接,参数1:主机名或IP；参数2：用户名；参数3：密码；参数4：数据库名称
-db = pymysql.connect("localhost", "root", "admin", "mr")
+db = pymysql.connect(host="localhost", user="root", password="admin", database="mr")
 # 使用 cursor() 方法创建一个游标对象 cursor
 cursor = db.cursor()
 def modi():

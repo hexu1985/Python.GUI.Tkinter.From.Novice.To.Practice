@@ -7,7 +7,7 @@
 import pymysql
 
 # 打开数据库连接
-db = pymysql.connect("localhost", "root", "admin", "mr", charset="utf8")
+db = pymysql.connect(host="localhost", user="root", password="admin", database="mr", charset="utf8")
 # 使用cursor()方法获取操作游标
 cursor = db.cursor()
 # 数据列表

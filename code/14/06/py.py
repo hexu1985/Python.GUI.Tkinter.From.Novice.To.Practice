@@ -6,7 +6,7 @@
 import pymysql
 
 # 打开数据库连接,参数1:主机名或IP；参数2：用户名；参数3：密码；参数4：数据库名称
-db = pymysql.connect("localhost", "root", "admin", "mr")
+db = pymysql.connect(host="localhost", user="root", password="admin", database="mr")
 # 使用 cursor() 方法创建一个游标对象 cursor
 cursor = db.cursor()
 # 使用 execute()  方法执行 SQL 查询
